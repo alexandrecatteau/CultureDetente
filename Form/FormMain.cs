@@ -21,8 +21,7 @@ namespace CultureDetente
     {
         private ArrayList _alNameColumns = new ArrayList(new String[] { "Id", "cote", "Type Doc", "Date Achat", "Disponible", "Titre", "Auteur", "Genre", "Nombre Pages", "Caution" });
 
-
-
+        
 
 
 

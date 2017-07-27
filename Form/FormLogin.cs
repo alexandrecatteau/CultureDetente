@@ -18,6 +18,9 @@ namespace CultureDetente
         {
             InitializeComponent();
             InitializeForm();
+#if DEBUG
+            txtMail.Text = "alex@alex.fr";
+#endif
         }
 
         private void InitializeForm()
