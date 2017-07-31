@@ -19,7 +19,7 @@ namespace CultureDetente
 
     public partial class FormMain : Form
     {
-        private ArrayList _alNameColumns = new ArrayList(new String[] { "Id", "cote", "Type Doc", "Date Achat", "Disponible", "Titre", "Auteur", "Genre", "Nombre Pages", "Caution" });
+        private ArrayList _alNameColumns = new ArrayList(new String[] { "Id", "Cote", "Type Doc", "Date Achat", "Disponible", "Titre", "Auteur", "Genre", "Nombre Pages", "Caution" });
 
         
 
@@ -84,6 +84,7 @@ namespace CultureDetente
             dgvLivreInfos.ReadOnly = true;
             dgvLivreInfos.AllowUserToAddRows = false;
             dgvLivreInfos.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            
 
             foreach (String columnName in _alNameColumns)
                 dgvLivreInfos.Columns.Add(columnName, columnName);
